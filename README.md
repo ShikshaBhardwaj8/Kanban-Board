@@ -21,6 +21,7 @@ An interactive and visually appealing Kanban Board web application built with Re
 Kanban-Celebal-Final-Project/
 ├── public/
 │   └── index.html
+
 ├── src/
 │   ├── components/
 │   │   ├── Board.jsx
@@ -30,6 +31,7 @@ Kanban-Celebal-Final-Project/
 │   ├── index.js
 │   └── styles/
 │       └── App.css
+
 ├── package.json
 └── README.md
 
