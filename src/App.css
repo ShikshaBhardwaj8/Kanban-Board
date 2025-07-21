@@ -1,0 +1,144 @@
+/* Custom Scrollbar */
+.custom-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  background-color: #030303;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  border: 1px solid gray;
+}
+
+/* App Layout */
+.app {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app_nav {
+  padding: 30px;
+  box-shadow: 0 1px 20px rgba(56, 40, 40, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  background-color: #f7ee8a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.app_boards_container {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  padding-top: 20px;
+}
+
+.app_boards {
+  height: 100%;
+  width: fit-content;
+  padding: 10px 30px;
+  display: flex;
+  gap: 30px;
+}
+
+.app_boards_last {
+  flex-basis: 290px;
+  min-width: 290px;
+}
+
+.app_boards_add-board {
+  background-color: #8652e6;
+  color: #ede8eb;
+  border-radius: 10px;
+  box-shadow: 1px 1px 0 1px rgba(240, 235, 235, 0.12);
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px 0;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.app_boards_add-board:hover {
+  background-color: #1c1c1c;
+}
+
+.app_boards_add-board_edit {
+  background-color: #000000;
+  border-radius: 10px;
+  padding: 10px;
+  color: #c92222;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Dropdown */
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: #4a4848;
+  border-radius: 3px;
+  min-height: 40px;
+  min-width: 80px;
+  width: fit-content;
+  height: fit-content;
+  max-width: 250px;
+  max-height: 390px;
+  overflow-y: auto;
+  z-index: 5;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.3s ease;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.46);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal_content {
+  overflow-y: auto;
+  max-height: 95vh;
+  background-color: #c8c0d7;
+  border-radius: 3px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.12);
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+}
+
+.modal_content::-webkit-scrollbar {
+  width: 12px !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

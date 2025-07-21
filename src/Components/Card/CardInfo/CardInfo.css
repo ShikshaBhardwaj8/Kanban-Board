@@ -1,0 +1,165 @@
+.cardinfo {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  min-width: 550px;
+  width: fit-content;
+  max-width: 650px;
+  height: fit-content;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 300ms ease;
+}
+
+.cardinfo:hover {
+  transform: scale(1.01);
+}
+
+.cardinfo_box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cardinfo_box_title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.cardinfo_box_title p {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.cardinfo_box_title svg {
+  height: 20px;
+  width: 20px;
+  color: #555;
+}
+
+.cardinfo_box_labels {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cardinfo_box_labels label {
+  border-radius: 50px;
+  background-color: #4b5563;
+  color: #fff;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background-color 200ms;
+}
+
+.cardinfo_box_labels label:hover {
+  background-color: #374151;
+}
+
+.cardinfo_box_labels label svg {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+}
+
+.cardinfo_box ul {
+  display: flex;
+  gap: 15px;
+  margin-left: 10px;
+}
+
+.cardinfo_box ul li {
+  list-style: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 150ms;
+  border: 2px solid #ddd;
+}
+
+.cardinfo_box ul li:hover {
+  transform: scale(1.1);
+}
+
+.cardinfo_box ul .li_active {
+  box-shadow: 0 0 0 3px #facc15; /* yellow ring */
+}
+
+.cardinfo_box_progress-bar {
+  width: 100%;
+  border-radius: 30px;
+  height: 12px;
+  background-color: #f3f4f6;
+  overflow: hidden;
+}
+
+.cardinfo_box_progress {
+  height: 100%;
+  border-radius: 30px;
+  background-color: #38bdf8;
+  width: 0;
+  transition: width 300ms ease;
+}
+
+.cardinfo_box_task_list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cardinfo_box_task_checkbox {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  transition: background-color 200ms;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.cardinfo_box_task_checkbox:hover {
+  background-color: #f9fafb;
+}
+
+.cardinfo_box_task_checkbox input,
+.cardinfo_box_task_checkbox svg {
+  height: 18px;
+  width: 18px;
+  outline: none;
+  cursor: pointer;
+}
+
+.cardinfo_box_task_checkbox p {
+  flex: 1;
+  line-height: 18px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.cardinfo_box_task_checkbox .completed {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.cardinfo_box input[type="date"] {
+  width: fit-content;
+  border: 2px solid #d1d5db;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1rem;
+  padding: 8px 12px;
+  transition: border-color 200ms;
+}
+
+.cardinfo_box input[type="date"]:hover,
+.cardinfo_box input[type="date"]:focus {
+  border-color: #60a5fa;
+}

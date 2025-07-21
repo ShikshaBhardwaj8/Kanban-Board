@@ -1,0 +1,82 @@
+.editable {
+  width: 100%;
+}
+
+/* Display Mode */
+.editable_display {
+  padding: 8px 14px;
+  border-radius: 6px;
+  background-color: #f0f2f5;
+  color: #333;
+  cursor: pointer;
+  width: fit-content;
+  transition: all 0.2s ease-in-out;
+  font-size: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.editable_display:hover {
+  background-color: #e4e6eb;
+  transform: scale(1.02);
+}
+
+/* Edit Mode */
+.editable_edit {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.editable_edit input {
+  border: 2px solid #0079bf;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1rem;
+  padding: 10px 14px;
+  transition: border-color 0.2s;
+}
+
+.editable_edit input:focus {
+  border-color: #005a94;
+  box-shadow: 0 0 0 2px rgba(0, 121, 191, 0.2);
+}
+
+/* Footer Buttons */
+.editable_edit_footer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.editable_edit_footer button {
+  cursor: pointer;
+  border-radius: 6px;
+  outline: none;
+  background-color: #0079bf;
+  color: #fff;
+  border: none;
+  transition: all 0.2s ease;
+  padding: 10px 16px;
+  font-weight: 500;
+}
+
+.editable_edit_footer button:hover {
+  background-color: #046daa;
+  transform: translateY(-1px);
+}
+
+.editable_edit_footer button:active {
+  transform: translateY(1px);
+}
+
+/* Close Icon */
+.editable_edit_footer .closeIcon {
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  transition: transform 0.2s;
+}
+
+.editable_edit_footer .closeIcon:hover {
+  transform: rotate(90deg);
+}
