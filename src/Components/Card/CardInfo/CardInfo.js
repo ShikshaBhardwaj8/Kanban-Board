@@ -119,7 +119,7 @@ function CardInfo(props) {
         <div className="cardinfo_box">
           <div className="cardinfo_box_title">
             <Type />
-            <p>Title📋</p>
+            <p>📋 𝑻𝒊𝒕𝒍𝒆:</p>
           </div>
           <Editable
             defaultValue={values.title}
@@ -132,7 +132,7 @@ function CardInfo(props) {
         <div className="cardinfo_box">
           <div className="cardinfo_box_title">
             <List />
-            <p>Description✏️</p>
+            <p>✏️ 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧</p>
           </div>
           <Editable
             defaultValue={values.desc}
@@ -145,7 +145,7 @@ function CardInfo(props) {
         <div className="cardinfo_box">
           <div className="cardinfo_box_title">
             <Calendar />
-            <p>Date📅</p>
+            <p>📅𝐃𝐚𝐭𝐞 </p>
           </div>
           <input
             type="date"
@@ -193,7 +193,7 @@ function CardInfo(props) {
         <div className="cardinfo_box">
           <div className="cardinfo_box_title">
             <CheckSquare />
-            <p>Tasks📝</p>
+            <p>📝 𝐓𝐚𝐬𝐤𝐬</p>
           </div>
           <div className="cardinfo_box_progress-bar">
             <div
