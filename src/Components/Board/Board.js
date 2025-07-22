@@ -38,7 +38,7 @@ function Board(props) {
           <MoreHorizontal />
           {showDropdown && (
             <Dropdown class="board_dropdown" onClose={() => setShowDropdown(false)}>
-              <p onClick={() => props.removeBoard()}>🗑 Delete Board</p>
+              <p onClick={() => props.removeBoard()}>🗑 𝐃𝐞𝐥𝐞𝐭𝐞 𝐁𝐨𝐚𝐫𝐝</p>
             </Dropdown>
           )}
         </div>
