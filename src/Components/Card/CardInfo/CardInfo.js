@@ -158,7 +158,7 @@ function CardInfo(props) {
         <div className="cardinfo_box">
           <div className="cardinfo_box_title">
             <Tag />
-            <p>Labels🧷</p>
+            <p> 🏷️ 𝐋𝐚𝐛𝐞𝐥 </p>
           </div>
           <div className="cardinfo_box_labels">
             {values.labels?.map((item, index) => (
